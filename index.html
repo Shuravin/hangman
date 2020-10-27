@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Виселица</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- <div class="start">
+      <div class="start_container">
+        <h1>Виселица</h1>
+        <div class="horline"></div>
+        <div class="choose_topic">
+          <p>Выберите тему</p>
+          <form>
+            <div class="topic_selection">
+              <select name="select" id="select" class="game_selection">
+                <option disabled selected>Выбрать</option>
+                <option value="cities">Города</option>
+                <option value="food">Еда</option>
+                <option value="animals">Животные</option>
+                <option value="art">Искусство</option>
+                <option value="science">Наука</option>
+              </select>
+              <button class="btn btn-submit">Играть</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="black_overlay"></div>
+    </div> -->
+    <main>
+      <div class="container">
+        <p>Тема: <span id="chosen_topic">ТЕСТ</span></p>
+        <div class="horline"></div>
+        <div class="body_grid">
+          <div class="tableau">
+            <div class="cell" data-cell-id="1">Т</div>
+            <div class="cell" data-cell-id="2">Е</div>
+            <div class="cell" data-cell-id="3">С</div>
+            <div class="cell" data-cell-id="4">Т</div>
+          </div>
+          <div class="hangman">
+            <img src="media/hangman.png" alt="Hangman" class="main_hangman" />
+            <img src="media/01head.png" alt="Hangman" class="img01" />
+            <img src="media/02body.png" alt="Hangman" class="img02" />
+            <img src="media/03arm.png" alt="Hangman" class="img03" />
+            <img src="media/04arm.png" alt="Hangman" class="img04" />
+            <img src="media/05leg.png" alt="Hangman" class="img05" />
+            <img src="media/06leg.png" alt="Hangman" class="img06" />
+          </div>
+          <div class="keyboard"></div>
+        </div>
+      </div>
+    </main>
+    <!-- Scripts -->
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,179 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5rem;
+  background: #999;
+}
+
+/* Container */
+.container {
+  width: 80vw;
+  margin: 0 auto;
+  background: #f4f4f4;
+  border: 1px solid #333;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Horline */
+.horline {
+  content: "";
+  width: 90%;
+  height: 1px;
+  background: #888;
+  margin: 1rem auto;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+  border: 1px solid #333;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  border: 1px solid #666;
+}
+
+.btn-submit {
+  background: lightseagreen;
+}
+
+.btn-submit:hover {
+  background: lightgreen;
+}
+
+/* Starting Window */
+.black_overlay {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: -1;
+}
+
+.start_container {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  width: 500px;
+  padding: 2rem;
+  background: #f4f4f4;
+  border: 1px solid #333;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.start_container p {
+  margin-bottom: 0.5rem;
+}
+
+.start .start_container .choose_topic .topic_selection {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.start_container .choose_topic .topic_selection .game_selection {
+  display: block;
+  border: 1px solid #333;
+  border-radius: 0.5rem;
+  outline: none;
+  margin-bottom: 0.5rem;
+  padding: 1rem;
+}
+
+.start_container .choose_topic .topic_selection .game_selection,
+.start_container .choose_topic .topic_selection .game_selection option {
+  font-size: 1rem;
+}
+
+/* Game Screen */
+main {
+  min-height: 100vh;
+  margin: 2rem 0;
+}
+
+main p {
+  font-size: 1.5rem;
+}
+
+main p span {
+  font-weight: bold;
+}
+
+main .body_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(1fr, 3);
+  gap: 1rem;
+}
+
+main .body_grid .tableau {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  border: 1px solid black;
+}
+
+/* Hangman positioning */
+main .body_grid .hangman {
+  grid-column: 2/3;
+  grid-row: 1/4;
+  border: 1px solid black;
+  position: relative;
+}
+
+main .body_grid .hangman .img01 {
+  position: absolute;
+  top: 37.37%;
+  left: 14.25%;
+  transform: translate(-14.25%, -37.37%);
+}
+
+main .body_grid .hangman .img02 {
+  position: absolute;
+}
+
+main .body_grid .hangman .img03 {
+  position: absolute;
+}
+
+main .body_grid .hangman .img04 {
+  position: absolute;
+}
+
+main .body_grid .hangman .img05 {
+  position: absolute;
+}
+
+main .body_grid .hangman .img06 {
+  position: absolute;
+}
+
+main .body_grid .keyboard {
+  grid-column: 1/2;
+  grid-row: 2/4;
+  border: 1px solid black;
+}
